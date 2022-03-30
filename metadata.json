@@ -1,0 +1,12 @@
+{
+  "name": "openshift-sandbox-ext",
+  "provider": "RedHat, Inc.",
+  "icon": "docker.svg",
+  "ui": {
+    "dashboard-tab": {
+      "title": "Openshift-Sandbox-Ext",
+      "src": "index.html",
+      "root": "/ui"
+    }
+  }
+}
