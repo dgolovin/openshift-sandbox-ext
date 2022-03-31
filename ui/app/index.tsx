@@ -7,4 +7,8 @@ import * as ReactDOM from 'react-dom';
 import * as React from 'react';
 import Header from './cluster';
 
-ReactDOM.render(<Header />, document.getElementById('root'));
+ReactDOM.render(
+    <React.StrictMode>
+        <Header />
+    </React.StrictMode>,
+    document.getElementById('root'));
