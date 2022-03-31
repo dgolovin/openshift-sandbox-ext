@@ -12,9 +12,9 @@ RUN npm run build
 
 FROM alpine
 LABEL org.opencontainers.image.title="openshift-sandbox-ext" \
-    org.opencontainers.image.description="OpenShift Sandbox signup" \
+    org.opencontainers.image.description="OpenShift Sandbox" \
     org.opencontainers.image.vendor="RedHat, Inc." \
     com.docker.desktop.extension.api.version=">= 0.2.0"
 COPY metadata.json .
-COPY docker.svg .
+COPY openshift.svg .
 COPY --from=client-builder /ui/build ui
